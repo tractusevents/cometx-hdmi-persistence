@@ -1,0 +1,10 @@
+{
+  "local_utc": "20260908T154125Z",
+  "host": "kvm-lab",
+  "script": "09-all-hpa-channel-cycle.sh",
+  "host_key_check": "StrictHostKeyChecking=yes; approved lab key or existing user known_hosts required",
+  "script_sha256": "4d3d332a57203fdb490752e4e14ea0de46e8671cdfc524982c1bcb61aaf4e8b9",
+  "exit_status": 0,
+  "stdout": "UTC: 2026-09-08T15:41:25Z\nCurrent Channel : 2\nRecovery directory: /tmp/cometx-hpa-restore-RUN\n2674_before=0x00\n00bb_before=0x00\n00b2_before=0x00\n00b5_before=0x00\n00b6_before=0x00\n0314_before=0x08\n\n[enable all four HPA mask bits]\n2674_enabled=0x0f expected=0x0f\n00bb_enabled=0x0f expected=0x0f\n00b2_enabled=0x0f expected=0x0f\n00b5_enabled=0x0f expected=0x0f\n00b6_enabled=0x0f expected=0x0f\n0314_enabled=0x08\n0314_enabled_after_hold=0x08\n\n[normal channel selection 0]\nff05=0x01\n0001=0x8e\n2674=0x0b\n00bb=0x0b\n00b2=0x0b\n00b5=0x0b\n00b6=0x0b\n\n[normal channel selection 1]\nff05=0x02\n0001=0x9e\n2674=0x0a\n00bb=0x08\n00b2=0x08\n00b5=0x08\n00b6=0x08\n\n[normal channel selection 3]\nff05=0x04\n0001=0xbe\n2674=0x08\n00bb=0x00\n00b2=0x00\n00b5=0x00\n00b6=0x00\n\n[normal channel selection 2]\nff05=0x03\n0001=0xae\n2674=0x00\n00bb=0x00\n00b2=0x00\n00b5=0x00\n00b6=0x00\n\n[recovery: pause, restore exact saved values, resume]\n2674_restored=0x00 expected=0x00\n00bb_restored=0x00 expected=0x00\n00b2_restored=0x00 expected=0x00\n00b5_restored=0x00 expected=0x00\n00b6_restored=0x00 expected=0x00\nffff_final=0x01\nff04_final=0x1e\nCurrent Channel : 2\nHDMI_A : Disconnected\nHDMI_B : Disconnected\nHDMI_C : Disconnected\nHDMI_D : Disconnected\n",
+  "stderr": ""
+}

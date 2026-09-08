@@ -1,0 +1,36 @@
+name: Validate research repository
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evidence-and-tools:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.11'
+      - name: Replay evidence and test execution boundaries
+        run: python -m unittest discover -s tests -v
+      - name: Check publication contents
+        run: python tools/check_publication.py
+      - name: Check shell syntax and no-argument guards
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          for script in experiments/*.sh; do
+            bash -n "$script"
+            if bash "$script"; then
+              echo "Script unexpectedly accepted missing execution arguments"
+              exit 1
+            fi
+          done

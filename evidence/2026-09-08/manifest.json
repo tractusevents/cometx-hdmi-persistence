@@ -1,0 +1,84 @@
+[
+  {
+    "path": "evidence/2026-09-08/registers/normal-channel-cycle.json",
+    "original_sha256": "f18c1ed3ad21be49818147f97815dc46388158d78ef72171293ee8e96b9da69c",
+    "published_sha256": "6e911abd1b1393423643fd79476fd2a9a17fe259bb58728c96f6fdddb0a7ced5",
+    "original_bytes": 1626,
+    "published_bytes": 1610,
+    "omitted_records": []
+  },
+  {
+    "path": "evidence/2026-09-08/registers/inactive-b-hpa.json",
+    "original_sha256": "adf30acf1f763ed53862c6c719bc722f6e6983a1ab8a0b14431830ecab9f0fec",
+    "published_sha256": "4b773ee4b2c26275c06fc23f78d14036309b16efb5ab99fa81f0e5de4dd299a7",
+    "original_bytes": 1954,
+    "published_bytes": 1943,
+    "omitted_records": []
+  },
+  {
+    "path": "evidence/2026-09-08/registers/lab-direct-paused.json",
+    "original_sha256": "e2d5b29ef613aff542077f3dad062c69ebe5c574ee3f529b046ce5f4e97a42a5",
+    "published_sha256": "33ffefdab4a39dd08ee5c3f8e382bb2781416251edb67900c311e89c5e360da3",
+    "original_bytes": 2810,
+    "published_bytes": 2795,
+    "omitted_records": []
+  },
+  {
+    "path": "evidence/2026-09-08/registers/direct-paused.json",
+    "original_sha256": "b9cde2fac5d9d9e77f9b9a3299b81bfd4b188c8aa559e46baa03768368f33b6f",
+    "published_sha256": "c9c31a8f5a6935ec09198b2f6d10f66766931a327a2c049f9ba4c0a3814f62bc",
+    "original_bytes": 2814,
+    "published_bytes": 2803,
+    "omitted_records": []
+  },
+  {
+    "path": "evidence/2026-09-08/registers/lab-direct-resumed.json",
+    "original_sha256": "a8330b4c6d89954551dcb5d1fab2bcba6c465f61abd0f7014bc6d98d7c9b014b",
+    "published_sha256": "da1da8312b902fb9d792e42cf6ac91a374c14b7f0c8ac68284db9c9171cf73bd",
+    "original_bytes": 4016,
+    "published_bytes": 4000,
+    "omitted_records": []
+  },
+  {
+    "path": "evidence/2026-09-08/registers/direct-resumed.json",
+    "original_sha256": "221a87a9c94aab66b4f9f6cc77ee63217be529967b29fd8bc78641361436089f",
+    "published_sha256": "34e11394dc5de21790080725e1ea2ab7160a63e1cc7f6940efcf6de0418e19b2",
+    "original_bytes": 4043,
+    "published_bytes": 4032,
+    "omitted_records": []
+  },
+  {
+    "path": "evidence/2026-09-08/windows/inactive-b-hpa.jsonl",
+    "original_sha256": "55a8417940710249b43812ac5ff58102a03f6be9a7982bbf0d8474cdd7e50bb2",
+    "published_sha256": "787bf4917fb033ae65cf9ce154cdd9e7a521a5255c2003dc344d33d97784673d",
+    "original_bytes": 102399,
+    "published_bytes": 95670,
+    "omitted_records": [
+      {
+        "line": 105,
+        "reason": "Incomplete final line in original pasted attachment"
+      }
+    ]
+  },
+  {
+    "path": "evidence/2026-09-08/windows/direct-paused.jsonl",
+    "original_sha256": "a7b1d442fbf53219b6ff564abf4d473bd6e4674759f3e8f10fa3d5b82de7ddef",
+    "published_sha256": "aad3403c4c57cccaf5a24212cb41548e3e33911af64417d0c9c09fc24a97b4de",
+    "original_bytes": 19198,
+    "published_bytes": 18960,
+    "omitted_records": []
+  },
+  {
+    "path": "evidence/2026-09-08/windows/direct-resumed.jsonl",
+    "original_sha256": "97b21b9203d65e06654aaf0712ee024b0df397216e539b756645c2735bab5018",
+    "published_sha256": "cf219ffb3735a0a15e5a0ba0c559ba6ec9b5338a97260978e33699699ce724fe",
+    "original_bytes": 102399,
+    "published_bytes": 95115,
+    "omitted_records": [
+      {
+        "line": 101,
+        "reason": "Incomplete final line in original pasted attachment"
+      }
+    ]
+  }
+]

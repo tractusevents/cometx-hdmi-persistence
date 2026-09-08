@@ -1,0 +1,11 @@
+{
+  "local_utc": "20260908T160018Z",
+  "host": "kvm-connected",
+  "user": "root",
+  "mode": "--observed-hpa-trial",
+  "host_key_check": "StrictHostKeyChecking=yes; existing user known_hosts",
+  "collector_sha256": "aa8ffc6f0f7d62035cabc47f41421948662d35d3039ba8a15c2f700c2ff9889a",
+  "exit_status": 0,
+  "stdout": "UTC: 2026-09-08T16:00:18Z\nCurrent Channel : 1\nRecovery directory: /tmp/cometx-hpa-restore-RUN\n\n[select empty C before the inactive-B trial]\nSELECT_C_REQUEST_UTC=2026-09-08T16:00:18Z\nCurrent Channel : 2\n2674_before=0x00\n00bb_before=0x00\n00b2_before=0x00\n00b5_before=0x00\n00b6_before=0x00\n0314_before=0x9a\n\n[enable RXB HPA mask bits]\n2674_enabled=0x02 expected=0x02\n00bb_enabled=0x02 expected=0x02\n00b2_enabled=0x02 expected=0x02\n00b5_enabled=0x02 expected=0x02\n00b6_enabled=0x02 expected=0x02\nHPA_APPLIED_UTC=2026-09-08T16:00:23Z\n0314_enabled=0x9a\n0314_enabled_after_hold=0xba\n\n[resume MCU with temporary masks still applied]\nMCU_RESUME_REQUEST_UTC=2026-09-08T16:00:26Z\nffff_running=0x01\nff04_running=0x64\nff07_running=0x22\nHDMI_A : Disconnected\nHDMI_B : Connected [SELECTED]\nHDMI_C : Disconnected\nHDMI_D : Disconnected\n\n[pause to inspect whether normal service retained the masks]\n2674_after_normal_service=0x02\n00bb_after_normal_service=0x02\n00b2_after_normal_service=0x02\n00b5_after_normal_service=0x02\n00b6_after_normal_service=0x02\n0314_after_normal_service=0xba\n\n[recovery: pause, restore exact saved values, resume]\nRESTORE_STARTED_UTC=2026-09-08T16:00:39Z\n2674_restored=0x00 expected=0x00\n00bb_restored=0x00 expected=0x00\n00b2_restored=0x00 expected=0x00\n00b5_restored=0x00 expected=0x00\n00b6_restored=0x00 expected=0x00\nRETURN_TO_B_REQUEST_UTC=2026-09-08T16:00:40Z\nOriginal channel B restored.\nffff_final=0x01\nff04_final=0x29\nCurrent Channel : 1\nHDMI_A : Disconnected\nHDMI_B : Connected [SELECTED]\nHDMI_C : Disconnected\nHDMI_D : Disconnected\n",
+  "stderr": ""
+}
